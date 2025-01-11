@@ -5,3 +5,4 @@ export * from './dialog'
 export * from './button'
 export * from './toaster'
 export * from "./dropdown-menu"
+export * from "./blur-image"
