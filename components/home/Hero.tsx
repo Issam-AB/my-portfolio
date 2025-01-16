@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Glow } from "./Glow";
 import { RetroGrid } from "../ui/retro-grid";
+import { StarBorder } from "../ui/star-border";
 
 const TEXTS = [
   {
@@ -88,9 +89,15 @@ const Hero = () => {
               alt="Issam"
               lazy={false}
             />
-            <span className="absolute top-5 -right-28 bg-white shadow-sm px-3 py-2 rounded-full text-sm font-medium font-sans w-max -rotate-[15deg]">
-              Issam aboulfadl 👋🏻
-            </span>
+            {/* <span className="absolute top-5 -right-28 bg-white shadow-sm px-3 py-2 rounded-full text-sm font-medium font-sans w-max -rotate-[15deg]"></span> */}
+            <StarBorder className="absolute top-5 -right-32 text-sm font-medium font-sans flex w-max -rotate-[15deg]">
+              <div className="inline-flex items-center gap-1.5">
+                <div className="relative w-2 h-2 bg-green-500 rounded-full">
+                  <span className="absolute inset-0 -z-1 inline-flex h-full w-full animate-ping  rounded-full bg-green-500 opacity-75"></span>
+                </div>
+                Issam aboulfadl 👋🏻
+              </div>
+            </StarBorder>
           </div>
           <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-50 blur-2xl" />
         </motion.div>
@@ -144,10 +151,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* <Glow
+        <Glow
           variant="above"
           className="animate-appear-zoom opacity-0 [animation-delay:1000ms]"
-        /> */}
+        />
 
         <RetroGrid />
       </div>

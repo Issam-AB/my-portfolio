@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import Providers from "./providers";
 import Header from "@/components/layout/header";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,13 +40,35 @@ export default async function RootLayout({
       >
         <NextIntlClientProvider messages={messages}>
           <Providers>
-            <Header />
-            <main
-              id="skip-nav"
-              className="mx-auto mb-16 max-w-5xl px-5 py-24 sm:px-8"
-            >
-              {children}
-            </main>
+            <>
+              <Header />
+              <main
+                id="skip-nav"
+                className="mx-auto mb-16 max-w-5xl px-5 py-24 sm:px-8"
+              >
+                {children}
+              </main>
+
+              {/* <Footer /> */}
+              <Image
+                width={1512}
+                height={550}
+                className="absolute left-1/2 top-0 -z-10 -translate-x-1/2"
+                src="/images/gradient-background-top.png"
+                alt=""
+                role="presentation"
+                priority
+              />
+              {/* <Image
+                width={1512}
+                height={447}
+                className="absolute -bottom-6 left-1/2 -z-10 -translate-x-1/2"
+                src="/images/gradient-background-bottom.png"
+                alt=""
+                role="presentation"
+                priority
+              /> */}
+            </>
           </Providers>
         </NextIntlClientProvider>
       </body>
