@@ -3,7 +3,7 @@
 import React from "react";
 import { Toaster, type ToasterProps } from "@/components/ui";
 import { ThemeProvider, useTheme } from "next-themes";
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
 
 type ProvidesProps = {
   children: React.ReactNode;
@@ -20,7 +20,9 @@ const Providers = (props: ProvidesProps) => {
       enableColorScheme
       disableTransitionOnChange
     >
-      <SessionProvider>{children}</SessionProvider>
+      {/* <SessionProvider> */}
+      {children}
+      {/* </SessionProvider> */}
       <Toaster
         toastOptions={{
           duration: 2500,

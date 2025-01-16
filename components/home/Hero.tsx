@@ -4,6 +4,7 @@ import { useTranslations } from "@/i18n/client";
 import { BlurImage } from "@/components/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Glow } from "./Glow";
 
 const TEXTS = [
   {
@@ -64,9 +65,37 @@ const Hero = () => {
 
   return (
     <div className="my-16 space-y-6">
-      <div className="flex justify-between gap-8">
-        <div className="flex flex-col gap-4">
-          <h1 className="font-title flex flex-col flex-wrap gap-2 text-xl font-bold sm:text-3xl">
+      <div className="flex flex-col items-center justify-between gap-8">
+        <motion.div
+          className="relative hidden size-28 md:block"
+          initial={{
+            scale: 0,
+          }}
+          animate={{
+            scale: 1,
+          }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
+          <div className="relative">
+            <BlurImage
+              src="/images/photo.png"
+              className="rounded-full ring ring-white object-contain"
+              width={150}
+              height={150}
+              alt="Issam"
+              lazy={false}
+            />
+            <span className="absolute top-5 -right-28 bg-white shadow-sm p-2 rounded-full text-sm font-medium w-max -rotate-[15deg]">
+              Issam aboulfadl 👋🏻
+            </span>
+          </div>
+          <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-50 blur-2xl" />
+        </motion.div>
+
+        <div className="flex flex-col items-center justify-center gap-4">
+          <h1 className="font-title flex flex-col text-center flex-wrap gap-2 text-xl font-bold sm:text-3xl">
             <div>{t("homepage.hero.title-top")}</div>
             <div className="flex gap-2">
               <motion.div
@@ -112,28 +141,12 @@ const Hero = () => {
             {t("homepage.hero.location-timezone")}
           </div>
         </div>
-        <motion.div
-          className="relative hidden size-28 md:block"
-          initial={{
-            scale: 0,
-          }}
-          animate={{
-            scale: 1,
-          }}
-          transition={{
-            duration: 0.3,
-          }}
-        >
-          <BlurImage
-            src="/images/avatar.png"
-            className="rounded-full"
-            width={112}
-            height={112}
-            alt="Hong"
-            lazy={false}
-          />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-50 blur-2xl" />
-        </motion.div>
+      </div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <Glow
+          variant="above"
+          className="animate-appear-zoom opacity-0 [animation-delay:1000ms]"
+        />
       </div>
     </div>
   );
