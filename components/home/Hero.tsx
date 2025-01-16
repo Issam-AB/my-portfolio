@@ -5,6 +5,7 @@ import { BlurImage } from "@/components/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Glow } from "./Glow";
+import { RetroGrid } from "../ui/retro-grid";
 
 const TEXTS = [
   {
@@ -87,7 +88,7 @@ const Hero = () => {
               alt="Issam"
               lazy={false}
             />
-            <span className="absolute top-5 -right-28 bg-white shadow-sm p-2 rounded-full text-sm font-medium w-max -rotate-[15deg]">
+            <span className="absolute top-5 -right-28 bg-white shadow-sm px-3 py-2 rounded-full text-sm font-medium font-sans w-max -rotate-[15deg]">
               Issam aboulfadl 👋🏻
             </span>
           </div>
@@ -143,10 +144,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Glow
+        {/* <Glow
           variant="above"
           className="animate-appear-zoom opacity-0 [animation-delay:1000ms]"
-        />
+        /> */}
+
+        <RetroGrid />
       </div>
     </div>
   );

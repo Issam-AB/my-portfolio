@@ -10,7 +10,7 @@ export default {
   theme: {
   	extend: {
   		colors: {
-			brand: "hsl(var(--brand))",
+  			brand: 'hsl(var(--brand))',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -56,7 +56,18 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+
+		animation: {
+			grid: "grid 15s linear infinite",
+		},
+
+		keyframes: {
+			grid: {
+			  "0%": { transform: "translateY(-50%)" },
+			  "100%": { transform: "translateY(0)" },
+			},
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
