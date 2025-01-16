@@ -4,7 +4,6 @@ import { useTranslations } from "@/i18n/client";
 import { BlurImage } from "@/components/ui";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Glow } from "./Glow";
 import { RetroGrid } from "../ui/retro-grid";
 import { StarBorder } from "../ui/star-border";
 
@@ -151,11 +150,6 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <Glow
-          variant="above"
-          className="animate-appear-zoom opacity-0 [animation-delay:1000ms]"
-        />
-
         <RetroGrid />
       </div>
     </div>
