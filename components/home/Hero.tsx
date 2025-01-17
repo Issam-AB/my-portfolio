@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { RetroGrid } from "../ui/retro-grid";
 import { StarBorder } from "../ui/star-border";
+import { Marquee } from "@/components/ui/marquee";
 
 const TEXTS = [
   {
@@ -88,7 +89,6 @@ const Hero = () => {
               alt="Issam"
               lazy={false}
             />
-            {/* <span className="absolute top-5 -right-28 bg-white shadow-sm px-3 py-2 rounded-full text-sm font-medium font-sans w-max -rotate-[15deg]"></span> */}
             <StarBorder className="absolute top-5 -right-32 text-sm font-medium font-sans flex w-max -rotate-[15deg]">
               <div className="inline-flex items-center gap-1.5">
                 <div className="relative w-2 h-2 bg-green-500 rounded-full">
@@ -151,6 +151,49 @@ const Hero = () => {
       </div>
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <RetroGrid />
+      </div>
+      <div className="absolute start-0 end-0 bottom-0  pointer-events-none">
+        <div className="relative">
+          <div
+            className="w-full h-24  opacity-80"
+            style={{
+              background: `linear-gradient(90deg, rgba(216,214,238,1) 0%, rgba(224,175,182,1) 50%, rgba(247,203,189,1) 100%)`,
+            }}
+          />
+          <Marquee
+            gap="20px"
+            className="py-4 absolute top-0 z-20 bg-white shadow-feature-card -rotate-[1.5deg]"
+            fade
+            pauseOnHover
+            haveMask={false}
+          >
+            {[
+              "Web Design",
+              "App Design",
+              "Dashboard",
+              "CRM Software",
+              "Strategy",
+
+              "Web Design",
+              "App Design",
+              "Dashboard",
+              "CRM Software",
+              "Strategy",
+            ].map((text, index) => (
+              <div key={index} className="flex items-center gap-[20px]">
+                <span className="font-semibold text-3xl">{text}</span>
+                <BlurImage
+                  src="/images/crystal.png"
+                  className="object-contain"
+                  width={50}
+                  height={50}
+                  alt="crystal"
+                  lazy={false}
+                />
+              </div>
+            ))}
+          </Marquee>
+        </div>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ type MarqueeProps = {
   reverse?: boolean;
   fade?: boolean;
   className?: string;
+  haveMask?: boolean;
 };
 
 export const Marquee = (props: MarqueeProps) => {
@@ -19,6 +20,7 @@ export const Marquee = (props: MarqueeProps) => {
     reverse = false,
     fade = false,
     className,
+    haveMask = true,
   } = props;
 
   const maskDirection = direction === "left" ? "to right" : "to bottom";
@@ -34,8 +36,8 @@ export const Marquee = (props: MarqueeProps) => {
         className
       )}
       style={{
-        maskImage: mask,
-        WebkitMaskImage: mask,
+        maskImage: haveMask ? mask : "",
+        WebkitMaskImage: haveMask ? mask : "",
         gap,
       }}
     >
