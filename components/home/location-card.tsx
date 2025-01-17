@@ -47,10 +47,10 @@ const LocationCard = () => {
       baseColor: [0.8, 0.8, 0.8],
       markerColor: [1, 1, 1],
       glowColor: [0.5, 0.5, 0.5],
-      markers: [{ location: [34.0084, 6.8539], size: 0.1 }],
+      markers: [{ location: [33.971588, -6.849813], size: 0.1 }],
       scale: 1.05,
       onRender: (state) => {
-        state.phi = 2.75 + r.get();
+        state.phi = 4.85 + r.get();
         state.width = width * 2;
         state.height = width * 2;
       },

@@ -76,3 +76,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.shadow-feature-card {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}

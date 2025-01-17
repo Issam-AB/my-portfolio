@@ -23,6 +23,7 @@ import {
   SiTypescript,
   SiVite,
   SiVitest,
+  SiSpringboot,
 } from "@icons-pack/react-simple-icons";
 import { useTranslations } from "@/i18n/client";
 import { ZapIcon } from "lucide-react";
@@ -42,6 +43,7 @@ const StacksCard = () => {
         <SiCss3 className="size-10" />
         <SiJavascript className="size-10" />
         <SiTypescript className="size-10" />
+        <SiSpringboot className="size-10" />
         <SiFigma className="size-10" />
         <SiTailwindcss className="size-10" />
         <SiNextdotjs className="size-10" />

@@ -38,7 +38,7 @@ const AboutMe = () => {
       transition={{
         duration: 0.5,
       }}
-      className="relative my-24 pt-16"
+      className="relative mb-24"
     >
       <motion.h2
         className="text-center text-3xl font-semibold"

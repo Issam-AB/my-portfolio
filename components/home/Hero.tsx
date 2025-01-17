@@ -65,10 +65,10 @@ const Hero = () => {
   if (!textItem) return null;
 
   return (
-    <div className="my-16 space-y-6">
+    <div className="mt-16 space-y-6 h-[85dvh]">
       <div className="flex flex-col items-center justify-between gap-8">
         <motion.div
-          className="relative hidden size-28 md:block"
+          className="relative size-28"
           initial={{
             scale: 0,
           }}
