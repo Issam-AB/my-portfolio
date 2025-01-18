@@ -32,7 +32,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="absolute start-0 end-0 -bottom-[100px] sm:overflow-visible overflow-hidden  pointer-events-none">
+      <div className="absolute start-0 end-0 sm:-bottom-[100px] -bottom-[60px] sm:overflow-visible overflow-hidden  pointer-events-none">
         <div className="relative">
           <div
             className="w-full sm:h-24 h-20 opacity-60"
