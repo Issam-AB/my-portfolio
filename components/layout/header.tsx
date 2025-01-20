@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import LocaleSwitcher from "./locale-switcher";
 import MobileNav from "./mobile-nav";
 import Navbar from "./navbar";
-import ThemeSwitcher from "./locale-switcher";
+import ThemeSwitcher from "./theme-switcher";
 import { tw } from "@/lib/utils/tw";
 import Link from "../link";
 import { Logo, Separator } from "../ui";
