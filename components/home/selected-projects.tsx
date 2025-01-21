@@ -7,15 +7,17 @@ import { allProjects } from "@/data";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-import Link from "../link";
+import Link from "next/link";
 import { tw } from "@/lib/utils";
 import BorderGlow from "../ui/border-glowing";
-
+import { TechIcon } from "../tech-icon";
+import { useRouter } from "next/navigation";
 interface CardProps {
   project: {
     slug: string;
     name: string;
     img: string;
+    iconLists: string[];
     description: string;
   };
 }
@@ -100,12 +102,13 @@ const SelectedProjects = () => {
 
 const Card = (props: CardProps) => {
   const { project } = props;
-  const { slug, name, description, img } = project;
+  const router = useRouter();
+  const { slug, name, description, img, iconLists } = project;
   const t = useTranslations();
 
   return (
-    <BorderGlow>
-      <Link key={slug} href={`/projects/${slug}`}>
+    <Link key={slug} href={`/projects/${slug}`} className="group">
+      <BorderGlow>
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center gap-3">
             <LightbulbIcon className="size-[18px]" />
@@ -118,14 +121,8 @@ const Card = (props: CardProps) => {
           height={832}
           src={`${img}`}
           alt={description}
-          className="rounded-lg grayscale "
+          imageClassName="rounded-lg grayscale h-[290px] w-full object-cover object-top group-hover:grayscale-0 transition-transform duration-300 delay-300"
         />
-        {/* <div className="absolute bottom-6 left-7 flex flex-col transition-[left] ease-out group-hover:left-[30px]">
-        <h3 className="text-2xl font-semibold text-white">{name}</h3>
-        <p className="dark:text-muted-foreground mt-2 text-zinc-100">
-          {description}
-        </p>
-      </div> */}
 
         <div className="px-2 mt-4">
           <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -138,29 +135,35 @@ const Card = (props: CardProps) => {
 
           <div className="flex items-center justify-between mt-7 mb-3">
             <div className="flex items-center">
-              {/* {item.iconLists.map((icon, index) => (
+              {iconLists.map((iconPath, index) => (
+                <div
+                  key={index}
+                  className="border grayscale group-hover:grayscale-0  border-zinc-200 rounded-full lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center bg-[#F3F4F6] backdrop-blur-lg bg-opacity-30"
+                  style={{
+                    transform: `translateX(-${8 * index + 2}px)`,
+                  }}
+                >
+                  <TechIcon
+                    key={index}
+                    iconPath={iconPath}
+                    className="w-8 h-8"
+                  />
+                </div>
+              ))}
+            </div>
             <div
-              key={index}
-              className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-              style={{
-                transform: `translateX(-${5 * index + 2}px)`,
-              }}
+              onClick={() => router.push(`/projects/${slug}`)}
+              className="flex justify-center items-center cursor-pointer z-30"
             >
-              <img src={icon} alt="icon5" className="p-2" />
-            </div>
-          ))} */}
-            </div>
-
-            <div className="flex justify-center items-center">
-              <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+              <p className="flex lg:text-sm font-medium md:text-xs text-sm text-black">
                 Check Live Site
               </p>
-              <ArrowUpRightIcon className="ms-3" color="#CBACF9" />
+              <ArrowUpRightIcon className="ms-3" color="#000" />
             </div>
           </div>
         </div>
-      </Link>
-    </BorderGlow>
+      </BorderGlow>
+    </Link>
   );
 };
 

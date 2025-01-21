@@ -3,6 +3,7 @@
 import { BlurImage } from "@/components/ui";
 import Link from "../link";
 import { Project } from "@/types/project";
+import { TechIcon } from "../tech-icon";
 
 type ProjectCardProps = Project;
 type ProjectCardsProps = {
@@ -22,7 +23,7 @@ const ProjectCards = (props: ProjectCardsProps) => {
 };
 
 const ProjectCard = (props: ProjectCardProps) => {
-  const { name, description, slug, img } = props;
+  const { name, description, slug, img, iconLists } = props;
 
   return (
     <Link
@@ -33,30 +34,31 @@ const ProjectCard = (props: ProjectCardProps) => {
         src={img}
         width={1280}
         height={832}
-        imageClassName="group-hover:scale-105"
+        imageClassName="group-hover:scale-105 h-[290px] w-full object-cover object-top transition-transform duration-300 delay-300"
         alt={name}
         className="rounded-lg"
       />
 
       <div className="flex-1 px-2 py-4">
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold">{name}</h2>
-          <div className="text-muted-foreground">{description}</div>
+          <h2 className="text-2xl font-semibold truncate">{name}</h2>
+          <div className="text-muted-foreground line-clamp-2">
+            {description}
+          </div>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          {/* {techstack.map((t) => {
-            const { label } = t;
-
-            return (
-              <div
-                key={label}
-                className="rounded-full border bg-zinc-50 px-3 py-2 text-xs leading-4 dark:bg-zinc-900"
-              >
-                {label}
-              </div>
-            );
-          })} */}
+          {iconLists.map((iconPath, index) => (
+            <div
+              key={index}
+              className="border border-zinc-200 rounded-full lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center bg-[#F3F4F6] backdrop-blur-lg bg-opacity-30"
+              style={{
+                transform: `translateX(-${13 * index + 2}px)`,
+              }}
+            >
+              <TechIcon key={index} iconPath={iconPath} className="w-8 h-8" />
+            </div>
+          ))}
         </div>
       </div>
     </Link>

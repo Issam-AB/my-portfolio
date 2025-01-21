@@ -6,7 +6,7 @@ import type { WebSite, WithContext } from "schema-dts";
 import AboutMe from "@/components/home/about-me";
 import SelectedProjects from "@/components/home/selected-projects";
 import {
-  SITE_FACEBOOK_URL,
+  SITE_LINKEDIN_URL,
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
   SITE_KEYWORDS,
@@ -17,6 +17,7 @@ import {
 } from "@/lib/constants";
 import { getLocalizedPath } from "@/lib/utils";
 import Hero from "@/components/home/Hero";
+import GetInTouch from "@/components/home/get-in-touch";
 
 type PageProps = {
   params: Promise<{
@@ -57,7 +58,7 @@ const Page = async (props: PageProps) => {
       name: SITE_NAME,
       url: SITE_URL,
       sameAs: [
-        SITE_FACEBOOK_URL,
+        SITE_LINKEDIN_URL,
         SITE_INSTAGRAM_URL,
         SITE_X_URL,
         SITE_GITHUB_URL,
@@ -85,7 +86,7 @@ const Page = async (props: PageProps) => {
       <AboutMe />
       <SelectedProjects />
       {/* <LatestArticles /> */}
-      {/* <GetInTouch /> */}
+      <GetInTouch />
     </>
   );
 };

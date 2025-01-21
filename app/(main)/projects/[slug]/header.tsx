@@ -24,14 +24,15 @@ type HeaderProps = {
   name: string;
   description: string;
   homepage?: string;
-  github: string;
+  github?: string;
+  link: string;
 };
 
 const Header = (props: HeaderProps) => {
-  const { name, description, homepage, github } = props;
+  const { name, description, link, github } = props;
   const t = useTranslations();
 
-  const repo = github.split("/").pop();
+  const repo = github?.split("/").pop();
 
   return (
     <div className="space-y-8 pt-10">
@@ -51,16 +52,23 @@ const Header = (props: HeaderProps) => {
         animate={animation.show}
         transition={{ delay: 0.1 }}
       >
-        {homepage ? (
-          <Link href={homepage} className={tw(buttonVariants(), "group")}>
+        {link ? (
+          <Link
+            href={link}
+            target="_blank"
+            className={tw(buttonVariants(), "group")}
+          >
             {t("projects.visit-website")}
             <ArrowUpRightIcon className="ml-2 size-5 transition-transform group-hover:-rotate-12" />
           </Link>
         ) : null}
-        <Link href={github} className={tw(buttonVariants(), "group")}>
-          {GITHUB_USERNAME}/{repo}
-          <ArrowUpRightIcon className="ml-2 size-5 transition-transform group-hover:-rotate-12" />
-        </Link>
+
+        {github ? (
+          <Link href={github} className={tw(buttonVariants(), "group")}>
+            {GITHUB_USERNAME}/{repo}
+            <ArrowUpRightIcon className="ml-2 size-5 transition-transform group-hover:-rotate-12" />
+          </Link>
+        ) : null}
       </motion.div>
     </div>
   );

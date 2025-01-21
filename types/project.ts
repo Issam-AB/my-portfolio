@@ -4,9 +4,10 @@ export interface Project {
     slug: string;
     description: string;
     img: string;
+    images: string[];
     iconLists: string[];
     link: string;
-    github: string;
+    github?: string;
     language: string;
 }
 

@@ -86,7 +86,7 @@ const Page = async (props: PageProps) => {
     notFound();
   }
 
-  const { name, description, img } = project;
+  const { name, description, images } = project;
 
   const jsonLd: WithContext<SoftwareApplication> = {
     "@context": "https://schema.org",
@@ -100,7 +100,7 @@ const Page = async (props: PageProps) => {
       name: SITE_NAME,
       url: SITE_URL,
     },
-    screenshot: `${img}`,
+    screenshot: `${images[0]}`,
   };
 
   return (
@@ -111,14 +111,19 @@ const Page = async (props: PageProps) => {
       />
       <div className="mx-auto max-w-3xl">
         <Header {...project} />
-        <BlurImage
-          src={img}
-          width={1280}
-          height={832}
-          alt={name}
-          className="my-12 rounded-lg"
-          lazy={false}
-        />
+
+        {images.map((img: string, index: number) => (
+          <div className="flex flex-col" key={index}>
+            <BlurImage
+              key={index}
+              width={1280}
+              height={832}
+              src={`/images${img}`}
+              alt={description}
+              className="mt-10 rounded-lg shadow-feature-card dark:shadow-feature-card-dark"
+            />
+          </div>
+        ))}
       </div>
     </>
   );
