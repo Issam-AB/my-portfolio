@@ -65,7 +65,7 @@ const Footer = () => {
             />
           </motion.a>
         </div>
-        <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-4">
           <p className="text-sm md:font-normal font-light">
             <div>&copy; {new Date().getFullYear()} Issam ABOULFADL</div>
           </p>

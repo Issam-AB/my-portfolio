@@ -34,17 +34,20 @@ const ProjectCard = (props: ProjectCardProps) => {
         src={img}
         width={1280}
         height={832}
-        imageClassName="group-hover:scale-105 h-[290px] w-full object-contain transition-transform duration-300 delay-300"
+        imageClassName="group-hover:scale-105 sm:h-[290px] h-auto w-full object-contain transition-transform duration-300 delay-300"
         alt={name}
         className="rounded-lg"
       />
 
-      <div className="flex-1 px-2 py-4">
+      <div className="px-2 sm:py-4 py-0">
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold truncate">{name}</h2>
-          <div className="text-muted-foreground line-clamp-2">
+          <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+            {name}
+          </h1>
+
+          <p className="dark:text-muted-foreground text-muted-foreground mt-2 font-light text-sm line-clamp-2">
             {description}
-          </div>
+          </p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">

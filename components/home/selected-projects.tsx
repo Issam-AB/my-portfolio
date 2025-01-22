@@ -119,15 +119,15 @@ const Card = (props: CardProps) => {
           height={832}
           src={`${img}`}
           alt={description}
-          imageClassName="rounded-lg grayscale h-[290px] w-full object-contain group-hover:grayscale-0 transition-transform duration-300 delay-300"
+          imageClassName="rounded-lg grayscale sm:h-[290px] h-auto w-full object-contain group-hover:grayscale-0 transition-transform duration-300 delay-300"
         />
 
-        <div className="px-2 mt-4">
+        <div className="px-2 sm:mt-4 mt-0">
           <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
             {name}
           </h1>
 
-          <p className="dark:text-muted-foreground mt-2font-light text-sm line-clamp-2">
+          <p className="dark:text-muted-foreground text-muted-foreground mt-2 font-light text-sm line-clamp-2">
             {description}
           </p>
 
