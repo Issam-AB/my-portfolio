@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { RetroGrid } from "../ui/retro-grid";
 import { StarBorder } from "../ui/star-border";
+import Image from "next/image";
 
 const TEXTS = [
   {
@@ -97,7 +98,16 @@ const Hero = () => {
             <div className="relative w-2 h-2 bg-green-500 rounded-full">
               <span className="absolute inset-0 -z-1 inline-flex h-full w-full animate-ping  rounded-full bg-green-500 opacity-75"></span>
             </div>
-            Welcome&apos;s you! <span>👋🏻</span>
+            Welcome&apos;s you!{" "}
+            <Image
+              src="/images/hello-hand.gif"
+              alt="Welcome animation"
+              width={20}
+              height={20}
+              priority
+              className="object-contain -rotate-[25deg]"
+              quality={75}
+            />
           </div>
         </StarBorder>
 
