@@ -32,7 +32,7 @@ import { Fragment, useCallback, useEffect, useState } from "react";
 
 import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard";
 import {
-  SITE_FACEBOOK_URL,
+  // SITE_FACEBOOK_URL,
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
   SITE_X_URL,
@@ -131,13 +131,13 @@ const CommandMenu = () => {
             openLink(SITE_GITHUB_URL);
           },
         },
-        {
-          title: "Facebook",
-          icon: <SiFacebook className="mr-3 size-4" />,
-          onSelect: () => {
-            openLink(SITE_FACEBOOK_URL);
-          },
-        },
+        // {
+        //   title: "Facebook",
+        //   icon: <SiFacebook className="mr-3 size-4" />,
+        //   onSelect: () => {
+        //     openLink(SITE_FACEBOOK_URL);
+        //   },
+        // },
         {
           title: "Instagram",
           icon: <SiInstagram className="mr-3 size-4" />,
