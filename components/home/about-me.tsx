@@ -32,17 +32,19 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="absolute start-0 end-0 sm:-bottom-[100px] -bottom-[60px] sm:overflow-visible overflow-hidden  pointer-events-none">
+      <div className="absolute start-0 end-0 sm:-bottom-[70px] -bottom-[60px] sm:overflow-visible overflow-hidden  pointer-events-none">
         <div className="relative">
           <div
             className="w-full sm:h-24 h-20 opacity-60"
             style={{
-              background: `linear-gradient(90deg, rgb(216, 214, 238) 0%, rgb(224, 175, 182) 50%, rgb(247, 203, 189) 100%)`,
+              backgroundImage: `url('/images/gradient-background-bottom.png')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
             }}
           />
           <Marquee
             gap="20px"
-            className="sm:py-4 py-2 absolute top-0 z-20 bg-white shadow-feature-card sm:-rotate-[1.5deg] -rotate-[0.5deg] sm:-skew-x-[7deg] -skew-x-[4deg]"
+            className="sm:py-4 py-2 absolute top-0 z-20 bg-white dark:bg-black shadow-feature-card sm:-rotate-[1.5deg] -rotate-[0.5deg] sm:-skew-x-[8deg] -skew-x-[4deg]"
             fade
             pauseOnHover
             haveMask={false}

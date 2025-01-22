@@ -24,14 +24,14 @@ export function StarBorder<T extends ElementType = "button">({
   return (
     <Component
       className={tw(
-        "relative inline-block py-[1px] overflow-hidden rounded-[20px]",
+        "relative inline-block py-[1px] overflow-hidden",
         className
       )}
       {...props}
     >
       <div
         className={tw(
-          "absolute w-[300%] h-[50%] bottom-[-11px] right-[-250%] rounded-full animate-star-movement-bottom z-0",
+          "absolute w-[300%] h-[50%] bottom-[-11px] right-[-250%] animate-star-movement-bottom z-0",
           "opacity-20 dark:opacity-70"
         )}
         style={{
@@ -41,7 +41,7 @@ export function StarBorder<T extends ElementType = "button">({
       />
       <div
         className={tw(
-          "absolute w-[300%] h-[50%] top-[-10px] left-[-250%] rounded-full animate-star-movement-top z-0",
+          "absolute w-[300%] h-[50%] top-[-10px] left-[-250%] animate-star-movement-top z-0",
           "opacity-20 dark:opacity-70"
         )}
         style={{
@@ -51,7 +51,7 @@ export function StarBorder<T extends ElementType = "button">({
       />
       <div
         className={tw(
-          "relative z-1 border text-foreground text-center px-2 py-1.5 text-sm rounded-[20px]",
+          "relative z-1 border rounded-lg text-foreground text-center px-2 py-1.5 text-sm ",
           "bg-gradient-to-b from-background/90 to-muted/90 border-border/40",
           "dark:from-background dark:to-muted dark:border-border"
         )}

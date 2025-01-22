@@ -66,7 +66,7 @@ const Hero = () => {
 
   return (
     <div className="mt-16 space-y-6 h-[85dvh]">
-      <div className="flex flex-col items-center justify-between gap-8">
+      <div className="flex flex-col items-center justify-between gap-6">
         <motion.div
           className="relative size-28"
           initial={{
@@ -88,17 +88,18 @@ const Hero = () => {
               alt="Issam"
               lazy={false}
             />
-            <StarBorder className="absolute top-5 -right-32 text-sm font-medium font-sans flex w-max -rotate-[15deg]">
-              <div className="inline-flex items-center gap-1.5">
-                <div className="relative w-2 h-2 bg-green-500 rounded-full">
-                  <span className="absolute inset-0 -z-1 inline-flex h-full w-full animate-ping  rounded-full bg-green-500 opacity-75"></span>
-                </div>
-                Issam aboulfadl 👋🏻
-              </div>
-            </StarBorder>
           </div>
           <div className="absolute inset-0 -z-10 bg-gradient-to-tl from-purple-700 to-orange-700 opacity-50 blur-2xl" />
         </motion.div>
+
+        <StarBorder className="text-sm font-medium font-sans flex w-max rounded-lg cursor-text">
+          <div className="inline-flex items-center gap-1.5">
+            <div className="relative w-2 h-2 bg-green-500 rounded-full">
+              <span className="absolute inset-0 -z-1 inline-flex h-full w-full animate-ping  rounded-full bg-green-500 opacity-75"></span>
+            </div>
+            Welcome&apos;s you! <span>👋🏻</span>
+          </div>
+        </StarBorder>
 
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="font-title flex flex-col text-center flex-wrap gap-2 text-xl font-bold sm:text-3xl">

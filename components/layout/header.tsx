@@ -6,13 +6,14 @@ import { useEffect, useState } from "react";
 
 // import CommandMenu from "@/components/command-menu";
 
-import LocaleSwitcher from "./locale-switcher";
+// import LocaleSwitcher from "./locale-switcher";
 import MobileNav from "./mobile-nav";
 import Navbar from "./navbar";
 import ThemeSwitcher from "./theme-switcher";
 import { tw } from "@/lib/utils/tw";
 import Link from "../link";
 import { Logo, Separator } from "../ui";
+import ResumeBtn from "../ui/resume-btn";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,9 +63,10 @@ const Header = () => {
       </Link>
       <div className="flex items-center gap-2">
         <Navbar />
+        <ResumeBtn />
         <Separator orientation="vertical" className="h-6" />
         <ThemeSwitcher />
-        <LocaleSwitcher />
+        {/* <LocaleSwitcher /> */}
         {/* <CommandMenu /> */}
         <MobileNav />
       </div>

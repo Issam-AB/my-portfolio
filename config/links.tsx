@@ -9,8 +9,8 @@ import {
 import {
   BarChartIcon,
   FlameIcon,
-  MessageCircleIcon,
-  MonitorIcon,
+  // MessageCircleIcon,
+  // MonitorIcon,
   PencilIcon,
   UserCircleIcon,
 } from "lucide-react";
@@ -31,19 +31,9 @@ type SocialLinks = Array<{
 
 export const HEADER_LINKS = [
   {
-    icon: <PencilIcon className="size-3.5" />,
-    href: "/blog",
-    key: "blog",
-  },
-  {
-    icon: <MessageCircleIcon className="size-3.5" />,
-    href: "/guestbook",
-    key: "guestbook",
-  },
-  {
-    icon: <BarChartIcon className="size-3.5" />,
-    href: "/dashboard",
-    key: "dashboard",
+    icon: <UserCircleIcon className="size-3.5" />,
+    href: "/about",
+    key: "about",
   },
   {
     icon: <FlameIcon className="size-3.5" />,
@@ -51,15 +41,26 @@ export const HEADER_LINKS = [
     key: "projects",
   },
   {
-    icon: <UserCircleIcon className="size-3.5" />,
-    href: "/about",
-    key: "about",
+    icon: <PencilIcon className="size-3.5" />,
+    href: "/blog",
+    key: "blog",
   },
+  // {
+  //   icon: <MessageCircleIcon className="size-3.5" />,
+  //   href: "/guestbook",
+  //   key: "guestbook",
+  // },
   {
-    icon: <MonitorIcon className="size-3.5" />,
-    href: "/uses",
-    key: "uses",
+    icon: <BarChartIcon className="size-3.5" />,
+    href: "/dashboard",
+    key: "dashboard",
   },
+
+  // {
+  //   icon: <MonitorIcon className="size-3.5" />,
+  //   href: "/uses",
+  //   key: "uses",
+  // },
 ] as const;
 
 export const FOOTER_LINKS = [
