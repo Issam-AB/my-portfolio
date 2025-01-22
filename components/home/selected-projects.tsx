@@ -119,7 +119,7 @@ const Card = (props: CardProps) => {
           height={832}
           src={`${img}`}
           alt={description}
-          imageClassName="rounded-lg grayscale h-[290px] w-full object-cover object-top group-hover:grayscale-0 transition-transform duration-300 delay-300"
+          imageClassName="rounded-lg grayscale h-[290px] w-full object-contain group-hover:grayscale-0 transition-transform duration-300 delay-300"
         />
 
         <div className="px-2 mt-4">
