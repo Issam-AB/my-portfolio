@@ -6,6 +6,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import Providers from "./providers";
 import Header from "@/components/layout/header";
 import Image from "next/image";
+import Footer from "@/components/layout/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +50,7 @@ export default async function RootLayout({
                 {children}
               </main>
 
-              {/* <Footer /> */}
+              <Footer />
               <Image
                 width={1512}
                 height={550}
@@ -59,15 +60,6 @@ export default async function RootLayout({
                 role="presentation"
                 priority
               />
-              {/* <Image
-                width={1512}
-                height={447}
-                className="absolute -bottom-6 left-1/2 -z-10 -translate-x-1/2"
-                src="/images/gradient-background-bottom.png"
-                alt=""
-                role="presentation"
-                priority
-              /> */}
             </>
           </Providers>
         </NextIntlClientProvider>

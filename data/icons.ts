@@ -8,6 +8,8 @@ import {
     SiThreedotjs,
     SiFramer,
     SiCloudflare,
+    SiGithub,
+    SiX
   } from "@icons-pack/react-simple-icons";
   
   export const iconMap: { [key: string]: IconType } = {
@@ -18,6 +20,8 @@ import {
     "/three.svg": SiThreedotjs,
     "/fm.svg": SiFramer,
     "/c.svg": SiCloudflare,
+    "/git.svg": SiGithub,
+    "/twit.svg": SiX,
   };
   
   export const getIconComponent = (path: string): IconType => {

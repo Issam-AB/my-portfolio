@@ -37,7 +37,7 @@ const AboutMe = () => {
           <div
             className="w-full sm:h-24 h-20 opacity-60"
             style={{
-              background: `linear-gradient(90deg, rgba(216,214,238,1) 0%, rgba(224,175,182,1) 50%, rgba(247,203,189,1) 100%)`,
+              background: `linear-gradient(90deg, rgb(216, 214, 238) 0%, rgb(224, 175, 182) 50%, rgb(247, 203, 189) 100%)`,
             }}
           />
           <Marquee

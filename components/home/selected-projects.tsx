@@ -11,7 +11,6 @@ import Link from "next/link";
 import { tw } from "@/lib/utils";
 import BorderGlow from "../ui/border-glowing";
 import { TechIcon } from "../tech-icon";
-import { useRouter } from "next/navigation";
 interface CardProps {
   project: {
     slug: string;
@@ -102,7 +101,6 @@ const SelectedProjects = () => {
 
 const Card = (props: CardProps) => {
   const { project } = props;
-  const router = useRouter();
   const { slug, name, description, img, iconLists } = project;
   const t = useTranslations();
 
@@ -150,15 +148,6 @@ const Card = (props: CardProps) => {
                   />
                 </div>
               ))}
-            </div>
-            <div
-              onClick={() => router.push(`/projects/${slug}`)}
-              className="flex justify-center items-center cursor-pointer z-30"
-            >
-              <p className="flex lg:text-sm font-medium md:text-xs text-sm text-black">
-                Check Live Site
-              </p>
-              <ArrowUpRightIcon className="ms-3" color="#000" />
             </div>
           </div>
         </div>
