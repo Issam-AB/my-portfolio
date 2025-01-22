@@ -19,7 +19,7 @@ const Footer = () => {
   });
 
   return (
-    <footer className="relative pb-8" id="contact">
+    <footer className="relative sm:px-2 px-4 sm:pb-8 pb-4" id="contact">
       <div className="bg-background/30 mx-auto max-w-5xl rounded-2xl flex flex-col p-8 shadow-sm saturate-100 backdrop-blur-[10px]">
         <div className="flex flex-col items-center">
           <motion.h1
@@ -75,7 +75,7 @@ const Footer = () => {
               <div
                 onClick={() => window.open(info.link, "_blank")}
                 key={info.id}
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 dark:bg-slate-50/80 rounded-lg border border-black-300"
               >
                 <Image src={info.img} alt="icons" width={20} height={20} />
               </div>

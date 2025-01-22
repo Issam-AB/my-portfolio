@@ -35,11 +35,9 @@ const AboutMe = () => {
       <div className="absolute start-0 end-0 sm:-bottom-[70px] -bottom-[60px] sm:overflow-visible overflow-hidden  pointer-events-none">
         <div className="relative">
           <div
-            className="w-full sm:h-24 h-20 opacity-60"
+            className="w-full sm:h-24 h-20 opacity-80 bg-cover bg-center"
             style={{
-              backgroundImage: `url('/images/gradient-background-bottom.png')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundImage: "url('/images/gradient-background-bottom.png')",
             }}
           />
           <Marquee

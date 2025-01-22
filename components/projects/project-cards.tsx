@@ -34,7 +34,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         src={img}
         width={1280}
         height={832}
-        imageClassName="group-hover:scale-105 h-[290px] w-full object-cover object-top transition-transform duration-300 delay-300"
+        imageClassName="group-hover:scale-105 h-[290px] w-full object-contain transition-transform duration-300 delay-300"
         alt={name}
         className="rounded-lg"
       />

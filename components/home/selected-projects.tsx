@@ -136,7 +136,7 @@ const Card = (props: CardProps) => {
               {iconLists.map((iconPath, index) => (
                 <div
                   key={index}
-                  className="border grayscale group-hover:grayscale-0  border-zinc-200 rounded-full lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center bg-[#F3F4F6] backdrop-blur-lg bg-opacity-30"
+                  className="border grayscale group-hover:grayscale-0 dark:grayscale border-zinc-200 dark:border-zinc-50/40 rounded-full lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center bg-[#F3F4F6] backdrop-blur-lg bg-opacity-30"
                   style={{
                     transform: `translateX(-${8 * index + 2}px)`,
                   }}
