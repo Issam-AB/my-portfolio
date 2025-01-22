@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  SiFacebook,
+  // SiFacebook,
   SiGithub,
   SiInstagram,
   SiX,
