@@ -1,6 +1,6 @@
 {
     "about": {
-      "description": "👋 Hi there! I am Hong, a student who loves web development.",
+      "description": "👋 Hi there! I am Issam, Full stack developer who loves web development.",
       "title": "About"
     },
     "admin": {
@@ -71,7 +71,7 @@
         "toggle-italic": "Toggle italic",
         "toggle-strikethrough": "Toggle strikethrough"
       },
-      "description": "My personal website and blog where I share my thoughts on various topics including tutorials, notes, and personal experiences. As a full-stack engineer from Hong Kong, I started learning web development as a hobby in December 2020. I use Next.js for building websites, GitHub for code hosting, and Vercel for deployment. Explore my site to learn more about my Journey and discover some of the web development resources that have inspired me.",
+      "description": "My personal website and blog where I share my thoughts on various topics including tutorials, notes, and personal experiences. As a full-stack engineer from Issam Kong, I started learning web development as a hobby in December 2020. I use Next.js for building websites, GitHub for code hosting, and Vercel for deployment. Explore my site to learn more about my Journey and discover some of the web development resources that have inspired me.",
       "footer": {
         "edit-on-github": "Edit on GitHub",
         "last-updated": "Last updated: {date}"
@@ -134,7 +134,7 @@
     "dialog": {
       "sign-in": {
         "continue-with": "Continue with {provider}",
-        "description": "to continue to honghong.me"
+        "description": "to continue to IssamIssam.me"
       }
     },
     "error": {
@@ -232,8 +232,8 @@
       "link-to-section": "Link to section"
     },
     "metadata": {
-      "site-description": "Hong • 18 y/o • Student • Full Stack Engineer",
-      "site-title": "Hong - A Full Stack Engineer"
+      "site-description": "Issam • 18 y/o • Student • Full Stack Engineer",
+      "site-title": "Issam - A Full Stack Engineer"
     },
     "not-found": "404 Not Found",
     "projects": {
