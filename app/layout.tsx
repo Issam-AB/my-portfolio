@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Issam - A Full Stack Engineer",
-  description: "Hong • Modern & Minimal Portfolio • Full Stack Engineer",
+  description: "Issam • Modern & Minimal Portfolio • Full Stack Engineer",
 };
 
 export default async function RootLayout({
