@@ -27,7 +27,7 @@ export const allProjects: Project[] = [
       id: 3,
       name: "Astra",
       slug: "astra",
-      description: "A modern landing page crafted for a no-code site builder, showcasing its potential and simplicity.",
+      description: "Astra is a modern, fully responsive website built with a powerful tech stack. This project showcases the use of Next.js for server-side rendering, TailwindCSS for sleek styling, shadcn UI for elegant components, and Clerk for secure authentication",
       img: "/images/astra.png",
       images: ["/astra-full.png"],
       iconLists: ["/svg/next.svg", "/svg/tail.svg",'/images/accentry.png', "/svg/ts.svg", "/svg/fm.svg","/svg/c.svg"],
