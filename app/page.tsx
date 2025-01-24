@@ -72,7 +72,7 @@ const Page = async (props: PageProps) => {
     inLanguage: locale,
     copyrightYear: new Date().getFullYear(),
     keywords: SITE_KEYWORDS,
-    dateCreated: "2020-12-05",
+    dateCreated: "2025-1-05",
     dateModified: new Date().toISOString(),
   };
 

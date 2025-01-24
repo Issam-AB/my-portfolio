@@ -42,7 +42,7 @@ const AboutMe = () => {
           />
           <Marquee
             gap="20px"
-            className="sm:py-4 py-2 absolute top-0 z-20 bg-white dark:bg-black shadow-feature-card sm:-rotate-[1.5deg] -rotate-[0.5deg] sm:-skew-x-[8deg] -skew-x-[4deg]"
+            className="sm:py-4 py-2 absolute top-0 z-20 bg-white dark:bg-[#0A0A0A] shadow-feature-card sm:-rotate-[1.5deg] -rotate-[0.5deg] sm:-skew-x-[8deg] -skew-x-[4deg]"
             fade
             pauseOnHover
             haveMask={false}
