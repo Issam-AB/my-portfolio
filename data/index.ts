@@ -7,7 +7,7 @@ export const allProjects: Project[] = [
       slug: "opineo-manager",
       description: "Opineo Manager is an AI-powered platform that simplifies Google Review management by analyzing customer feedback and generating actionable insights. It helps businesses transform thousands of reviews into meaningful data through smart analysis and custom reporting.",
       img: "/images/opineo/manager-1.png",
-      images: ["/opineo/overview.png", "/opineo/analyse.png", "/opineo/formule.png", "/opineo/engager.png", "/opineo/comparaison.png"],
+      images: ["/opineo/overview.png", "/opineo/analyse.png", "/opineo/formule.png", "/opineo/analyse-manager.png", "/opineo/engager.png", "/opineo/comparaison.png", "/opineo/roles.png", "/opineo/settings.png", "/opineo/facture-manager.png"],
       iconLists: ["/svg/re.svg", "/svg/nest.svg", "/svg/prisma.svg" ,"/svg/react-query.svg", "/svg/tail.svg", "/svg/ts.svg", "/svg/fm.svg", "/svg/gb.svg"],
       link: "https://opineomanager.com/manager",
       language: "en"
@@ -18,9 +18,9 @@ export const allProjects: Project[] = [
       slug: "opineo-whatsapp",
       description: "Opineo WhatsApp connects your Google Reviews directly to WhatsApp, enabling quick and efficient review management through your messaging app. It uses AI to generate personalized responses, making it easy to maintain your online reputation while saving valuable time.",
       img: "/images/opineo/whatsapp.jpg",
-      images: ["/opineo/whatsapp-1.jpg", "/opineo/whatsapp-2.jpg", "/opineo/onboarding.jpg", "/opineo/payment-whatsapp.png", "/opineo/notification-whatsapp.png", "/opineo/generate.png" ],
+      images: ["/opineo/start-whatsap.jpg","/opineo/whatsapp-1.jpg", "/opineo/whatsapp-2.jpg", "/opineo/onboarding.jpg", "/opineo/onboarding-ton.png","/opineo/onboarding-analyze.png","/opineo/payment-whatsapp.png", "/opineo/edit-payment-whatspp.png", "/opineo/notification-whatsapp.png", "/opineo/generate.png",],
       iconLists: ["/svg/re.svg", "/svg/prisma.svg", "/svg/react-query.svg", "/svg/tail.svg", "/svg/ts.svg", "/svg/fm.svg", "/svg/gb.svg", "/images/storybook.webp"],
-      link: "https://opineomanager.com/whatsapp",
+      link: "https://opineo.io/",
       language: "en"
   },
   {
@@ -29,7 +29,7 @@ export const allProjects: Project[] = [
       slug: "legal-ai",
       description: "An AI-powered SaaS platform that automatically generates and updates custom Terms & Conditions and Terms of Service documents, making legal compliance simple and accessible for businesses.",
       img: "/images/legalai/hero.png",
-      images: ["/legalai/img1.png", "/legalai/img5.png","/legalai/img2.png", "/legalai/img3.png", "/legalai/img4.png"],
+      images: ["/legalai/img1.png", "/legalai/img5.png","/legalai/img2.png","/legalai/img6.png", "/legalai/img3.png", "/legalai/img4.png"],
       iconLists: ["/svg/re.svg", "/svg/tail.svg","/svg/react-query.svg","/svg/redux.svg", "/svg/ts.svg", "/svg/fm.svg", "/images/storybook.webp"],
       link: "https://cgvenligne.com/",
       language: "en"
