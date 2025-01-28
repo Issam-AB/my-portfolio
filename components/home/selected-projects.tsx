@@ -78,7 +78,7 @@ const SelectedProjects = () => {
           duration: 0.3,
         }}
       >
-        {allProjects.map((project) => (
+        {allProjects.slice(0, 4).map((project) => (
           <Card key={project.slug} project={project} />
         ))}
       </motion.div>

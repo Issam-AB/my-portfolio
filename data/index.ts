@@ -25,14 +25,13 @@ export const allProjects: Project[] = [
   },
   {
       id: 3,
-      name: "Astra",
-      slug: "astra",
-      description: "Astra is a modern, fully responsive website built with a powerful tech stack. This project showcases the use of Next.js for server-side rendering, TailwindCSS for sleek styling, shadcn UI for elegant components, and Clerk for secure authentication",
-      img: "/images/astra.png",
-      images: ["/astra-full.png"],
-      iconLists: ["/svg/next.svg", "/svg/tail.svg",'/images/accentry.png', "/svg/ts.svg", "/svg/fm.svg","/svg/c.svg"],
-      link: "https://astra-rust.vercel.app/",
-      github: "https://github.com/Issam-AB/astra",
+      name: "Legal ai - Legal Document Automation Platform",
+      slug: "legal-ai",
+      description: "An AI-powered SaaS platform that automatically generates and updates custom Terms & Conditions and Terms of Service documents, making legal compliance simple and accessible for businesses.",
+      img: "/images/legalai/hero.png",
+      images: ["/legalai/img1.png", "/legalai/img5.png","/legalai/img2.png", "/legalai/img3.png", "/legalai/img4.png"],
+      iconLists: ["/svg/re.svg", "/svg/tail.svg","/svg/react-query.svg","/svg/redux.svg", "/svg/ts.svg", "/svg/fm.svg", "/images/storybook.webp"],
+      link: "https://cgvenligne.com/",
       language: "en"
   },
   {
@@ -47,6 +46,31 @@ export const allProjects: Project[] = [
       github: "https://github.com/Issam-AB/next-ecommerce-shopco",
       language: "en"
   },
+  {
+    id: 3,
+    name: "Astra",
+    slug: "astra",
+    description: "Astra is a modern, fully responsive website built with a powerful tech stack. This project showcases the use of Next.js for server-side rendering, TailwindCSS for sleek styling, shadcn UI for elegant components, and Clerk for secure authentication",
+    img: "/images/astra.png",
+    images: ["/astra-full.png"],
+    iconLists: ["/svg/next.svg", "/svg/tail.svg",'/images/accentry.png', "/svg/ts.svg", "/svg/fm.svg","/svg/c.svg"],
+    link: "https://astra-rust.vercel.app/",
+    github: "https://github.com/Issam-AB/astra",
+    language: "en"
+  },
+  {
+    id: 3,
+    name: "Pathway",
+    slug: "patway",
+    description: "Pathway is a Modern UI/UX Landing Page Build with Next JS and Tailwind CSS.",
+    img: "/images/pathwayhero.png",
+    images: ["/pathway.png"],
+    iconLists: ["/svg/next.svg", "/svg/tail.svg",'/images/accentry.png', "/svg/ts.svg", "/svg/fm.svg"],
+    link: "https://pathway-saas-landing-page.vercel.app",
+    github: "https://github.com/Issam-AB/Light-saas-landing-page",
+    language: "en"
+  },
+
 ];
 
 export const socialMedia = [
