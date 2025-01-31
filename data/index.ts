@@ -48,8 +48,8 @@ export const allProjects: Project[] = [
   },
   {
     id: 3,
-    name: "PropEase ",
-    slug: "propease ",
+    name: "PropEase",
+    slug: "propease",
     description: "PropEase is a modern real estate management landing page that showcases property listings, agent profiles, and real estate services with an elegant and responsive design.",
     img: "/images/propease-landing.png",
     images: ["/propease-whole-page.png"],
