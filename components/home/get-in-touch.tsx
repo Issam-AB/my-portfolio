@@ -4,7 +4,7 @@ import { useTranslations } from "@/i18n/client";
 import { BlurImage } from "@/components/ui";
 import { motion, useAnimate, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-import { Mail, Phone } from "lucide-react";
+// import { Mail, Phone } from "lucide-react";
 
 const variants = {
   initial: {
@@ -140,19 +140,19 @@ const GetInTouch = () => {
             <div className="my-8">
               <a
                 href="mailto:Issam.aboulfadl05@gmail.com"
-                className="bg-email-button flex items-center space-x-2 rounded-full py-2 text-sm dark:text-white"
+                className="bg-email-button rounded-full px-4 py-2 text-sm text-white"
               >
-                <Mail className="w-5 h-5" />
+                {/* <Mail className="w-5 h-5" /> */}
                 <span>Issam.aboulfadl05@gmail.com</span>
               </a>
 
-              <a
+              {/* <a
                 href="tel:+212636939179"
-                className="bg-email-button flex items-center space-x-2 rounded-full py-2 text-sm dark:text-white"
+                className="bg-email-button flex items-center space-x-2 rounded-full py-2 text-sm text-white w-fit"
               >
                 <Phone className="w-5 h-5" />
                 <span>+212 6 36 93 91 79</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

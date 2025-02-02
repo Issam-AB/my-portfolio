@@ -21,24 +21,25 @@ import {
 } from "@/components/ui";
 
 import {
-  CodeIcon,
+  // CodeIcon,
   CommandIcon,
   LinkIcon,
-  LogInIcon,
-  LogOutIcon,
+  // LogInIcon,
+  // LogOutIcon,
 } from "lucide-react";
-import { signOut, useSession } from "next-auth/react";
+// import { signOut, useSession } from "next-auth/react";
 import { Fragment, useCallback, useEffect, useState } from "react";
 
 import { useCopyToClipboard } from "@/lib/hooks/use-copy-to-clipboard";
 import {
-  // SITE_FACEBOOK_URL,
+  SITE_LINKEDIN_URL,
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
   SITE_X_URL,
   SITE_YOUTUBE_URL,
 } from "@/lib/constants";
-import { useDialogsStore } from "@/store/dialogs";
+// import { useDialogsStore } from "@/store/dialogs";
+import { Linkedin } from "@/config/links";
 
 type Groups = Array<{
   name: string;
@@ -52,9 +53,9 @@ type Groups = Array<{
 const CommandMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [copy] = useCopyToClipboard();
-  const { status } = useSession();
+  // const { status } = useSession();
   const t = useTranslations();
-  const { setDialogs } = useDialogsStore();
+  // const { setDialogs } = useDialogsStore();
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -77,29 +78,29 @@ const CommandMenu = () => {
   }, []);
 
   const groups: Groups = [
-    {
-      name: t("command-menu.groups.account"),
-      actions: [
-        ...(status === "authenticated"
-          ? [
-              {
-                title: t("common.sign-out"),
-                icon: <LogOutIcon className="mr-3 size-4" />,
-                onSelect: () => signOut(),
-              },
-            ]
-          : [
-              {
-                title: t("common.sign-in"),
-                icon: <LogInIcon className="mr-3 size-4" />,
-                onSelect: () => {
-                  setIsOpen(false);
-                  setDialogs({ signIn: true });
-                },
-              },
-            ]),
-      ],
-    },
+    // {
+    //   name: t("command-menu.groups.account"),
+    //   actions: [
+    //     ...(status === "authenticated"
+    //       ? [
+    //           {
+    //             title: t("common.sign-out"),
+    //             icon: <LogOutIcon className="mr-3 size-4" />,
+    //             onSelect: () => signOut(),
+    //           },
+    //         ]
+    //       : [
+    //           {
+    //             title: t("common.sign-in"),
+    //             icon: <LogInIcon className="mr-3 size-4" />,
+    //             onSelect: () => {
+    //               setIsOpen(false);
+    //               setDialogs({ signIn: true });
+    //             },
+    //           },
+    //         ]),
+    //   ],
+    // },
     {
       name: t("command-menu.groups.general"),
       actions: [
@@ -112,13 +113,13 @@ const CommandMenu = () => {
             await copy({ text: globalThis.location.href });
           },
         },
-        {
-          title: t("command-menu.actions.source-code"),
-          icon: <CodeIcon className="mr-3 size-4" />,
-          onSelect: () => {
-            openLink("https://github.com/tszhong0411/honghong.me");
-          },
-        },
+        // {
+        //   title: t("command-menu.actions.source-code"),
+        //   icon: <CodeIcon className="mr-3 size-4" />,
+        //   onSelect: () => {
+        //     openLink("https://my-portfolio-nine-iota-20.vercel.app/");
+        //   },
+        // },
       ],
     },
     {
@@ -131,13 +132,13 @@ const CommandMenu = () => {
             openLink(SITE_GITHUB_URL);
           },
         },
-        // {
-        //   title: "Facebook",
-        //   icon: <SiFacebook className="mr-3 size-4" />,
-        //   onSelect: () => {
-        //     openLink(SITE_FACEBOOK_URL);
-        //   },
-        // },
+        {
+          title: "Linkedin",
+          icon: <Linkedin className="mr-3 size-4" />,
+          onSelect: () => {
+            openLink(SITE_LINKEDIN_URL);
+          },
+        },
         {
           title: "Instagram",
           icon: <SiInstagram className="mr-3 size-4" />,

@@ -4,7 +4,7 @@ import { useTranslations } from "@/i18n/client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-// import CommandMenu from "@/components/command-menu";
+import CommandMenu from "@/components/command-menu";
 
 // import LocaleSwitcher from "./locale-switcher";
 import MobileNav from "./mobile-nav";
@@ -67,7 +67,7 @@ const Header = () => {
         <Separator orientation="vertical" className="h-6" />
         <ThemeSwitcher />
         {/* <LocaleSwitcher /> */}
-        {/* <CommandMenu /> */}
+        <CommandMenu />
         <MobileNav />
       </div>
     </motion.header>

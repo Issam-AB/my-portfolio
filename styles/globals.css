@@ -33,6 +33,9 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    
+    --nav-link-indicator: radial-gradient(44.6% 825% at 50% 50%,#ff8585 0%,#ff486d00 100%);
+    --email-button: linear-gradient(180deg,#d20a1e 5%,#ef5a5a);
 
     --brand: 210 100% 50%;
     --brand-foreground: 213 100% 60%;
@@ -63,6 +66,8 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
 
+    --nav-link-indicator: radial-gradient(44.6% 825% at 50% 50%,#ff1c1c 0%,#ff486d00 100%);
+
     --brand: 213 100% 60%;
     --brand-foreground: 210 100% 50%;
   }
@@ -79,4 +84,8 @@ body {
 
 .shadow-feature-card {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.bg-email-button {
+  background: var(--email-button);
 }
