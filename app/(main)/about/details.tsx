@@ -25,9 +25,23 @@ const AboutDetails = () => {
         src="/images/about-img.jpg"
         alt="about-picture"
         width={1000}
-        height={800}
+        height={200}
         imageClassName="rounded-lg"
       />
+
+      <p className="text-foreground/85 mt-4">
+        I bring a unique perspective to every project, ensuring seamless
+        functionality meets stunning aesthetics. My approach combines clean code
+        architecture with intuitive user interfaces, creating solutions that not
+        only work flawlessly but also delight users.
+      </p>
+      <p className="text-foreground/85 mt-4">
+        I specialize in building responsive web applications with React and
+        creating cross-platform mobile experiences using React Native. When I'm
+        not coding, you&apos;ll find me designing sleek user interfaces in
+        Figma, always striving to bridge the gap between functionality and
+        beautiful design. Let&apos;s build something amazing together! ✨
+      </p>
     </div>
   );
 };
