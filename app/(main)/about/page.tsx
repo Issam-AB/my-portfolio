@@ -98,7 +98,7 @@ const Page = async (props: PageProps) => {
       <PageTitle
         title={title}
         description={
-          "👋 Hi there! I'm Issam, a Full Stack Engineer hybrid who loves to build great products with delightful interfaces."
+          "👋 Hi there! I'm Issam ABOULFADL, Developer hybrid who loves to build great products with delightful interfaces."
         }
       />
       <AboutDetails />
