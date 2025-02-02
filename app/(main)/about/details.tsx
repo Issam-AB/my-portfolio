@@ -37,10 +37,9 @@ const AboutDetails = () => {
       </p>
       <p className="text-foreground/85 mt-4">
         I specialize in building responsive web applications with React and
-        creating cross-platform mobile experiences using React Native. When I'm
-        not coding, you&apos;ll find me designing sleek user interfaces in
-        Figma, always striving to bridge the gap between functionality and
-        beautiful design. Let&apos;s build something amazing together! ✨
+        creating cross-platform mobile experiences using React Native. I&apos;m
+        all about diving into challenges improving and expanding my skillset and
+        inclusion. Let&apos;s build something amazing together! ✨
       </p>
     </div>
   );
