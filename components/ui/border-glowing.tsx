@@ -31,7 +31,7 @@ const BorderGlow = ({
           height: `${circleSize}px`,
           left: `${mouse.elementX}px`,
           top: `${mouse.elementY}px`,
-          opacity: 0.1,
+          opacity: 0.2,
           background:
             "linear-gradient(135deg, #3BC4F2, #7A69F9,#F26378,#F5833F)",
         }}

@@ -198,6 +198,10 @@
         "card": "Project",
         "more": "See all project",
         "title": "Selected Projects"
+      },
+
+      "experiences": {
+        "title": "Experience"
       }
     },
     "hook": {

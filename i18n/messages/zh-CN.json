@@ -198,6 +198,9 @@
         "card": "项目",
         "more": "查看所有项目",
         "title": "精选项目"
+      },
+      "experiences": {
+        "title": "Experience"
       }
     },
     "hook": {

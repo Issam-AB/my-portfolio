@@ -198,6 +198,9 @@
         "card": "專案",
         "more": "查看所有專案",
         "title": "精選專案"
+      },
+      "experiences": {
+        "title": "Experience"
       }
     },
     "hook": {

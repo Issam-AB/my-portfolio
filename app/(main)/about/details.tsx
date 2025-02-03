@@ -21,13 +21,23 @@ const AboutDetails = () => {
         and are both accessible and easy to maintain.
       </p>
 
-      <BlurImage
-        src="/images/about-img.jpg"
-        alt="about-picture"
-        width={1000}
-        height={200}
-        imageClassName="rounded-lg"
-      />
+      <div className="grid sm:grid-cols-2 grid-cols-1 items-center gap-2">
+        <BlurImage
+          src="/images/about-img.jpg"
+          alt="about-picture"
+          width={1000}
+          height={200}
+          imageClassName="rounded-lg w-[100%] h-72 object-cover object-center"
+        />
+        <div className="sm:flex hidden h-72 w-full items-center justify-center rounded-lg bg-black">
+          <BlurImage
+            src="/favicon.svg"
+            alt="logo-picture"
+            width={50}
+            height={50}
+          />
+        </div>
+      </div>
 
       <p className="text-foreground/85 mt-4">
         I bring a unique perspective to every project, ensuring seamless

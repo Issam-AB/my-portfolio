@@ -18,6 +18,7 @@ import {
 import { getLocalizedPath } from "@/lib/utils";
 import Hero from "@/components/home/Hero";
 import GetInTouch from "@/components/home/get-in-touch";
+import Experience from "@/components/home/experience";
 
 type PageProps = {
   params: Promise<{
@@ -85,6 +86,7 @@ const Page = async (props: PageProps) => {
       <Hero />
       <AboutMe />
       <SelectedProjects />
+      <Experience />
       {/* <LatestArticles /> */}
       <GetInTouch />
     </>
