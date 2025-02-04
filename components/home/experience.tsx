@@ -6,61 +6,114 @@ import { motion, useInView, Variants } from "framer-motion";
 import { BlurImage } from "../ui";
 import { EXPERIENCE } from "@/lib/constants";
 
+// Container Animation (Overall section)
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      delayChildren: 0.1, // Reduced delay
-      staggerChildren: 0.15, // Reduced stagger time
+      delayChildren: 0.1,
+      staggerChildren: 0.2,
     },
   },
 };
 
-// const itemVariants: Variants = {
+// Experience Item Animation
+// const experienceItemVariants: Variants = {
 //   hidden: {
-//     y: 20, // Reduced distance
 //     opacity: 0,
+//     y: 30,
 //   },
 //   visible: {
-//     y: 0,
 //     opacity: 1,
+//     y: 0,
 //     transition: {
-//       duration: 0.4, // Faster duration
-//       ease: [0.25, 0.1, 0.25, 1], // Custom easing curve
+//       duration: 0.5,
+//       ease: [0.4, 0, 0.2, 1],
 //     },
 //   },
 // };
 
+// Content Variants (Company Details)
 const contentVariants: Variants = {
   hidden: {
-    y: 15,
     opacity: 0,
+    y: 20,
   },
   visible: {
-    y: 0,
     opacity: 1,
+    y: 0,
     transition: {
-      duration: 0.3,
-      ease: [0.25, 0.1, 0.25, 1],
+      duration: 0.4,
+      ease: [0.4, 0, 0.2, 1],
     },
   },
 };
 
+// Details Variants (Responsibilities)
 const detailsVariants: Variants = {
   hidden: {
-    y: 10,
     opacity: 0,
+    y: 30,
   },
   visible: {
-    y: 0,
     opacity: 1,
+    y: 0,
     transition: {
-      duration: 0.3,
-      delay: 0.1, // Slight delay for staggered effect
-      ease: [0.25, 0.1, 0.25, 1],
+      duration: 0.5,
+      delay: 0.2,
+      ease: [0.4, 0, 0.2, 1],
     },
   },
+};
+
+// Tags Variants
+const tagVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.9,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 250,
+      damping: 12,
+    },
+  },
+};
+
+const AnimatedTags: React.FC<{ tags?: string[] }> = ({ tags }) => {
+  return tags && tags.length > 0 ? (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            delayChildren: 0.3, // Delay after details animation
+            staggerChildren: 0.07, // Quick stagger between tags
+          },
+        },
+      }}
+      className="flex items-center flex-wrap gap-2"
+    >
+      {tags.map((tech: string, techIndex: number) => (
+        <motion.div
+          key={techIndex}
+          variants={tagVariants}
+          className="border bg-zinc-50 leading-4 dark:bg-zinc-900 text-xs px-2 py-1 rounded"
+        >
+          {tech}
+        </motion.div>
+      ))}
+    </motion.div>
+  ) : null;
 };
 
 // Create a separate component for each experience item
@@ -234,16 +287,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           {exp.responsibilities}
         </p>
 
-        <div className="flex items-center flex-wrap gap-2">
-          {exp.tags?.map((tech: string, techIndex: number) => (
-            <div
-              key={techIndex}
-              className="border bg-zinc-50 leading-4 dark:bg-zinc-900 text-xs px-2 py-1 rounded"
-            >
-              {tech}
-            </div>
-          ))}
-        </div>
+        <AnimatedTags tags={exp.tags} />
       </motion.div>
     </motion.li>
   );
