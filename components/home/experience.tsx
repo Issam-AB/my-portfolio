@@ -17,21 +17,6 @@ const containerVariants: Variants = {
   },
 };
 
-// const itemVariants: Variants = {
-//   hidden: {
-//     y: 20, // Reduced distance
-//     opacity: 0,
-//   },
-//   visible: {
-//     y: 0,
-//     opacity: 1,
-//     transition: {
-//       duration: 0.4, // Faster duration
-//       ease: [0.25, 0.1, 0.25, 1], // Custom easing curve
-//     },
-//   },
-// };
-
 const contentVariants: Variants = {
   hidden: {
     y: 15,
