@@ -178,7 +178,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     >
       {isMobile && (
         <div
-          className={`absolute inset-0 bg-gray-50 opacity-0 transition-opacity duration-200 rounded-lg -z-10 ${
+          className={`absolute inset-0 opacity-0 transition-opacity duration-200 rounded-lg -z-10 ${
             showHoverEffect ? "opacity-10" : ""
           }`}
         />
