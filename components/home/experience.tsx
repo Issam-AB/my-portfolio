@@ -17,6 +17,21 @@ const containerVariants: Variants = {
   },
 };
 
+// const itemVariants: Variants = {
+//   hidden: {
+//     y: 20, // Reduced distance
+//     opacity: 0,
+//   },
+//   visible: {
+//     y: 0,
+//     opacity: 1,
+//     transition: {
+//       duration: 0.4, // Faster duration
+//       ease: [0.25, 0.1, 0.25, 1], // Custom easing curve
+//     },
+//   },
+// };
+
 const contentVariants: Variants = {
   hidden: {
     y: 15,
@@ -163,7 +178,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
     >
       {isMobile && (
         <div
-          className={`absolute inset-0 bg-gray-50 dark:bg-gray-800 opacity-0 transition-opacity duration-200 rounded-lg -z-10 ${
+          className={`absolute inset-0 bg-gray-50 opacity-0 transition-opacity duration-200 rounded-lg -z-10 ${
             showHoverEffect ? "opacity-10" : ""
           }`}
         />
