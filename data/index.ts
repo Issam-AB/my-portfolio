@@ -48,6 +48,17 @@ export const allProjects: Project[] = [
   },
   {
     id: 3,
+    name: "UFC-Que Choisir",
+    slug: "ufc-que-choisir",
+    description: "UFC-Que Choisir informs, advises, and protects consumers, conducting independent product tests. It processes personal data in compliance with GDPR principles.",
+    img: "/images/ufc-que-choisir-landing.png",
+    images: ["/ufc-que-choisir-landing-whole.jpg"],
+    iconLists: ["/svg/re.svg", "/svg/redux.svg", "/svg/tail.svg", "/svg/js.svg"],
+    link: "https://www.quechoisir.org/",
+    language: "en"
+  },
+  {
+    id: 3,
     name: "PropEase",
     slug: "propease",
     description: "PropEase is a modern real estate management landing page that showcases property listings, agent profiles, and real estate services with an elegant and responsive design.",
