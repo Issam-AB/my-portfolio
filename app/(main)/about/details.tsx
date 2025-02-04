@@ -27,7 +27,7 @@ const AboutDetails = () => {
           alt="about-picture"
           width={1000}
           height={200}
-          imageClassName="rounded-lg w-[100%] h-72 object-cover object-center"
+          imageClassName="rounded-lg w-[100%] sm:h-72 h-auto object-cover object-center"
         />
         <div className="sm:flex hidden h-72 w-full items-center justify-center rounded-lg bg-black">
           <BlurImage
