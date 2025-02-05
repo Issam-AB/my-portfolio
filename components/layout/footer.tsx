@@ -67,10 +67,12 @@ const Footer = () => {
         </div>
         <div className="flex mt-16 md:flex-row flex-col justify-between items-center gap-4">
           <p className="text-sm md:font-normal font-light">
-            <div>&copy; {new Date().getFullYear()} Issam ABOULFADL</div>
+            <div>
+              &copy; {new Date().getFullYear()} Made with ❤️ by Issam ABOULFADL
+            </div>
           </p>
 
-          <div className="flex items-center md:gap-3 gap-6">
+          <div className="sm:flex hidden items-center md:gap-3 gap-6">
             {socialMedia.map((info) => (
               <div
                 onClick={() => window.open(info.link, "_blank")}
