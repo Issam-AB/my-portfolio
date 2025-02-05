@@ -65,12 +65,12 @@ const AboutMe = () => {
                   {text}
                 </span>
                 <BlurImage
-                  src="/images/crystal.png"
+                  src="/images/crystal.webp"
                   className="object-contain"
                   width={50}
                   height={50}
                   alt="crystal"
-                  lazy={false}
+                  lazy={true}
                 />
               </div>
             ))}
