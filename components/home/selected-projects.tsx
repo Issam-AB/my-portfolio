@@ -122,7 +122,7 @@ const Card = (props: CardProps) => {
           imageClassName="rounded-lg grayscale sm:h-[290px] h-auto w-full object-contain group-hover:grayscale-0 transition-transform duration-300 delay-300"
         />
 
-        <div className="px-2 sm:mt-4 mt-0">
+        <div className="px-2 sm:mt-4 mt-2">
           <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
             {name}
           </h1>
@@ -131,7 +131,7 @@ const Card = (props: CardProps) => {
             {description}
           </p>
 
-          <div className="flex items-center justify-between mt-7 mb-3">
+          <div className="flex items-center justify-between sm:mt-7 mt-5 mb-3">
             <div className="flex items-center">
               {iconLists.map((iconPath, index) => (
                 <div

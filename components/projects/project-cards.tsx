@@ -39,7 +39,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         className="rounded-lg"
       />
 
-      <div className="px-2 sm:py-4 py-0">
+      <div className="px-2 sm:py-4 py-2">
         <div className="space-y-2">
           <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
             {name}
