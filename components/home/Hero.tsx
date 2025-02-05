@@ -106,7 +106,7 @@ const Hero = () => {
               height={20}
               priority
               className="object-contain -rotate-[25deg]"
-              quality={75}
+              quality={60}
             />
           </div>
         </StarBorder>

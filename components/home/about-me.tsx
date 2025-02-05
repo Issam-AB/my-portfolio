@@ -37,7 +37,7 @@ const AboutMe = () => {
           <div
             className="w-full sm:h-24 h-20 opacity-80 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/images/gradient-background-bottom.png')",
+              backgroundImage: "url('/images/gradient-background-bottom.webp')",
             }}
           />
           <Marquee

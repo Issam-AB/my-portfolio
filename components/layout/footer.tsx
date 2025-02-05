@@ -90,7 +90,7 @@ const Footer = () => {
         layout="fill"
         objectFit="cover"
         className="absolute inset-x-0 bottom-0 -z-10"
-        src="/images/gradient-background-bottom.png"
+        src="/images/gradient-background-bottom.webp"
         alt=""
         role="presentation"
         priority
