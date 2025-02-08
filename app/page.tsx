@@ -13,7 +13,7 @@ import {
   SITE_NAME,
   SITE_URL,
   SITE_X_URL,
-  SITE_YOUTUBE_URL,
+  // SITE_YOUTUBE_URL,
 } from "@/lib/constants";
 import { getLocalizedPath } from "@/lib/utils";
 import Hero from "@/components/home/Hero";
@@ -63,7 +63,7 @@ const Page = async (props: PageProps) => {
         SITE_INSTAGRAM_URL,
         SITE_X_URL,
         SITE_GITHUB_URL,
-        SITE_YOUTUBE_URL,
+        // SITE_YOUTUBE_URL,
       ],
     },
     mainEntityOfPage: {

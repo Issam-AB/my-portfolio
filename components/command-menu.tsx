@@ -5,7 +5,7 @@ import {
   SiGithub,
   SiInstagram,
   SiX,
-  SiYoutube,
+  // SiYoutube,
 } from "@icons-pack/react-simple-icons";
 
 import { useTranslations } from "../i18n/client";
@@ -36,7 +36,7 @@ import {
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
   SITE_X_URL,
-  SITE_YOUTUBE_URL,
+  // SITE_YOUTUBE_URL,
 } from "@/lib/constants";
 // import { useDialogsStore } from "@/store/dialogs";
 import { Linkedin } from "@/config/links";
@@ -153,13 +153,13 @@ const CommandMenu = () => {
             openLink(SITE_X_URL);
           },
         },
-        {
-          title: "YouTube",
-          icon: <SiYoutube className="mr-3 size-4" />,
-          onSelect: () => {
-            openLink(SITE_YOUTUBE_URL);
-          },
-        },
+        // {
+        //   title: "YouTube",
+        //   icon: <SiYoutube className="mr-3 size-4" />,
+        //   onSelect: () => {
+        //     openLink(SITE_YOUTUBE_URL);
+        //   },
+        // },
       ],
     },
   ];

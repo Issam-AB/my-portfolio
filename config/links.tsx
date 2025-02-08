@@ -4,7 +4,7 @@ import {
   SiGithub,
   SiInstagram,
   SiX,
-  SiYoutube,
+  // SiYoutube,
 } from "@icons-pack/react-simple-icons";
 import {
   BarChartIcon,
@@ -20,7 +20,7 @@ import {
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
   SITE_X_URL,
-  SITE_YOUTUBE_URL,
+  // SITE_YOUTUBE_URL,
 } from "@/lib/constants";
 
 type SocialLinks = Array<{
@@ -88,7 +88,7 @@ export const FOOTER_LINKS = [
       { href: SITE_LINKEDIN_URL, key: "linkedin" },
       { href: SITE_INSTAGRAM_URL, key: "instagram" },
       { href: SITE_GITHUB_URL, key: "github" },
-      { href: SITE_YOUTUBE_URL, key: "youtube" },
+      // { href: SITE_YOUTUBE_URL, key: "youtube" },
     ],
   },
 ] as const;
@@ -140,9 +140,9 @@ export const SOCIAL_LINKS: SocialLinks = [
     title: "X",
     icon: SiX,
   },
-  {
-    href: SITE_YOUTUBE_URL,
-    title: "YouTube",
-    icon: SiYoutube,
-  },
+  // {
+  //   href: SITE_YOUTUBE_URL,
+  //   title: "YouTube",
+  //   icon: SiYoutube,
+  // },
 ];
