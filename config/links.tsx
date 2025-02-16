@@ -4,13 +4,10 @@ import {
   SiGithub,
   SiInstagram,
   SiX,
-  // SiYoutube,
 } from "@icons-pack/react-simple-icons";
 import {
   BarChartIcon,
   FlameIcon,
-  // MessageCircleIcon,
-  // MonitorIcon,
   PencilIcon,
   UserCircleIcon,
 } from "lucide-react";
@@ -20,7 +17,6 @@ import {
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
   SITE_X_URL,
-  // SITE_YOUTUBE_URL,
 } from "@/lib/constants";
 
 type SocialLinks = Array<{
@@ -45,22 +41,11 @@ export const HEADER_LINKS = [
     href: "/blog",
     key: "blog",
   },
-  // {
-  //   icon: <MessageCircleIcon className="size-3.5" />,
-  //   href: "/guestbook",
-  //   key: "guestbook",
-  // },
   {
     icon: <BarChartIcon className="size-3.5" />,
     href: "/dashboard",
     key: "dashboard",
   },
-
-  // {
-  //   icon: <MonitorIcon className="size-3.5" />,
-  //   href: "/uses",
-  //   key: "uses",
-  // },
 ] as const;
 
 export const FOOTER_LINKS = [
@@ -140,9 +125,5 @@ export const SOCIAL_LINKS: SocialLinks = [
     title: "X",
     icon: SiX,
   },
-  // {
-  //   href: SITE_YOUTUBE_URL,
-  //   title: "YouTube",
-  //   icon: SiYoutube,
-  // },
+
 ];
