@@ -6,8 +6,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui";
-import { MonitorIcon, MoonIcon, SunIcon } from "lucide-react";
+import { MonitorIcon, MoonIcon, SunIcon as SunIconLucide } from "lucide-react";
 import { useTheme } from "next-themes";
+import { SunIcon } from "../icons/Sun";
 
 const ThemeSwitcher = () => {
   const { setTheme } = useTheme();
@@ -24,7 +25,8 @@ const ThemeSwitcher = () => {
           data-testid="theme-toggle"
         >
           <span className="sr-only">{t("theme-toggle.toggle-theme")}</span>
-          <SunIcon className="size-4 dark:hidden" />
+          <SunIcon />
+
           <MoonIcon className="hidden size-4 dark:block" />
         </Button>
       </DropdownMenuTrigger>
@@ -36,7 +38,8 @@ const ThemeSwitcher = () => {
           }}
           data-testid="theme-light-button"
         >
-          <SunIcon className="size-[18px]" /> {t("theme-toggle.options.light")}
+          <SunIconLucide className="size-[18px]" />{" "}
+          {t("theme-toggle.options.light")}
         </DropdownMenuItem>
         <DropdownMenuItem
           className="gap-2"

@@ -94,6 +94,17 @@ export const allProjects: Project[] = [
     github: "https://github.com/Issam-AB/astra",
     language: "en"
   },
+  {
+    id: 3,
+    name: "Social & Co",
+    slug: "social-and-co",
+    description: "Developed and optimized tailored staffing solutions for the social and medico-social sectors, effectively managing over 2,000 interim professionals across more than 200 client organizations in Île-de-France since 2014. This project focuses on enhancing workforce efficiency and meeting the unique needs of each client through innovative technology and strategic planning.",
+    img: "/images/social-&-co.png",
+    images: ["/social-&-co-0.png","/social-&-co-1.png","/social-&-co-2.png", "/social-&-co-3.png"],
+    iconLists: ["/svg/vue.svg", "/svg/nuxt.svg", '/svg/sass.svg', "/svg/js.svg"],
+    link: "https://social-and-co.fr/",
+    language: "en"
+  },
 
 ];
 
